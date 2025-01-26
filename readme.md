@@ -18,9 +18,9 @@ DeepPrivacy first detects, then recursively anonymization all individuals in an 
 ![](docs/media/anonymization_illustration.png)
 
 
-## DeepPrivacy2 vs [DeepPrivacy1](https://github.com/hukkelas/DeepPrivacy)
+## Modifications over DeepPrivacy2
 
-This repository improves over the original [DeepPrivacy2](https://github.com/hukkelas/DeepPrivacy) repository with the following new features:
+This repository improves over the original [DeepPrivacy2](https://github.com/hukkelas/DeepPrivacy2) repository with the following new features:
 - **Directory Processing:** Anonymize the entire directory of images with a single command
 - **Improved Setup Process:** Streamlined setup process
 - **Failure Detection:** Instances of failures are detected and logged in a text file
@@ -70,6 +70,15 @@ Run the following command. Replace <source_path> with the directory where the ph
 **Face Anonymization (Complete directory)**
 ```
 python3 anonymize.py configs/anonymizers/deep_privacy1.py -i <source_path> --output_path <output_path>
+```
+
+**Full-Body Anonymization (Single Image)**
+```
+python3 anonymize.py configs/anonymizers/FB_cse.py -i media/regjeringen.jpg --output_path output.png --visualize
+```
+**Face Anonymization (Single Image)**
+```
+python3 anonymize.py configs/anonymizers/face.py -i media/regjeringen.jpg --output_path output.png --visualize
 ```
 
 ### Anonymization Failures:
