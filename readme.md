@@ -5,10 +5,10 @@
 
 DeepPrivacy2 is a toolbox for realistic anonymization of humans, including a face and a full-body anonymizer.
 
-![](media/original (single face).jpg)
-![](media/anonymized (single face).jpg)
-![](media/original (multiple faces).jpg)
-![](media/anonymized (multiple faces).jpg)
+![](media/original(single_face).jpg)
+![](media/anonymized(single_face).jpg)
+![](media/original(multiple_faces).jpg)
+![](media/anonymized(multiple_faces).jpg)
 <p align="center">
 
 <img width="50%" src="https://www.hukkelas.no/images/anonymization_demo.gif" />
