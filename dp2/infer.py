@@ -5,7 +5,6 @@ from tops.config import instantiate
 from tops.logger import warn
 from dp2.generator.deep_privacy1 import MSGGenerator
 
-
 def load_generator_state(ckpt, G: torch.nn.Module, ckpt_mapper=None):
     state = ckpt["EMA_generator"] if "EMA_generator" in ckpt else ckpt["running_average_generator"]
     if ckpt_mapper is not None:
