@@ -1,6 +1,6 @@
 <center>
 
-# DeepPrivacy2 Enhancements
+# Deep Privacy Enhancements
 </center>
 
 DeepPrivacy2 is a toolbox for realistic anonymization of humans, including a face and a full-body anonymizer.
