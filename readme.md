@@ -71,11 +71,13 @@ python3 anonymize.py configs/anonymizers/deep_privacy1.py -i <source_path> --out
 ```
 
 **Anonymization Failures:**
-In a very few cases the GAN script may not be able to perform a successful anonymization, albeit the occurrence is low. In my test, this happened in about ~5-10% of the results, usually when the face covered about 70% of the image like very close up headshots. The anonymization module has been modified to check if there were no changes made in a file by performing a md5 hash check on both the input file and output file data, and log all such instances to “non_anonymized.txt” in your source directory. See screenshot below.
+In a very few cases the GAN script may not be able to perform a successful anonymization, albeit the occurrence is low. In my test, this happened in about ~5-10% of the results, usually when the face covered about 70% of the image like very close up headshots. 
+
+The anonymization module has been modified to check if there were no changes made in a file by performing a md5 hash check on both the input file and output file data, and log all such instances to “non_anonymized.txt” in your source directory. See screenshot below.
 
 There can be 2 ways an image ends up in the non_anonymized list - 
-There were faces in the image but no anonymization was performed (We want to investigate these instances and run blurring the faces in these images)
-There were no faces in the image (this is okay, nothing to do further). 
+- There were faces in the image but no anonymization was performed (We want to investigate these instances and run blurring the faces in these images)
+- There were no faces in the image (this is okay, nothing to do further). 
 
 
 See the [documentation](https://www.hukkelas.no/deep_privacy2/#/anonymization) for more detailed instructions for anonymization.
