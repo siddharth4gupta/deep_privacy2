@@ -8,7 +8,7 @@ DeepPrivacy2 is a toolbox for realistic anonymization of humans, including a fac
 **Single Face**
 
 | Original | Anonymized |
-|![](media/original(single_face).jpg)|![](media/anonymized(single_face).jpg)|
+|[](media/original(single_face).jpg)|[](media/anonymized(single_face).jpg)|
 
 **Multiple Faces**
 
