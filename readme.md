@@ -1,11 +1,6 @@
 <center>
 
 # DeepPrivacy2 - A Toolbox for Realistic Image Anonymization
-[[Paper]](https://openaccess.thecvf.com/content/WACV2023/papers/Hukkelas_DeepPrivacy2_Towards_Realistic_Full-Body_Anonymization_WACV_2023_paper.pdf) [[Appendix]](https://openaccess.thecvf.com/content/WACV2023/supplemental/Hukkelas_DeepPrivacy2_Towards_Realistic_WACV_2023_supplemental.pdf)
-[[Video Demo]](https://youtu.be/Kt3au719hhk)
-[[Documentation]](http://hukkelas.no/deep_privacy2/)
-[![Hugging Face Spaces](https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-Spaces-blue)](https://huggingface.co/spaces/haakohu/deep_privacy2)
-
 </center>
 
 DeepPrivacy2 is a toolbox for realistic anonymization of humans, including a face and a full-body anonymizer.
