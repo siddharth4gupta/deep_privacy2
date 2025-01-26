@@ -64,13 +64,15 @@ pip install -e .
 
 
 ### Perform Anonymization:
+
 Run the following command. Replace <source_path> with the directory where the photos are stored and the <output_path> with a path to a directory of choice
+
 **Face Anonymization (Complete directory)**
 ```
 python3 anonymize.py configs/anonymizers/deep_privacy1.py -i <source_path> --output_path <output_path>
 ```
 
-**Anonymization Failures:**
+### Anonymization Failures:
 In a very few cases the GAN script may not be able to perform a successful anonymization, albeit the occurrence is low. In my test, this happened in about ~5-10% of the results, usually when the face covered about 70% of the image like very close up headshots. 
 
 The anonymization module has been modified to check if there were no changes made in a file by performing a md5 hash check on both the input file and output file data, and log all such instances to “non_anonymized.txt” in your source directory. See screenshot below.
